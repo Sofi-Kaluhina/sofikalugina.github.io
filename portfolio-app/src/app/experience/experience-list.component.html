@@ -1,0 +1,16 @@
+<div>
+  <div
+    *ngFor="let experience of experiences | async"
+    [class.selected]="isSelected(experience)"
+    (click)="onSelect(experience)"
+    style="border: 1px solid black"
+  >
+
+    <div>Company: {{experience.name}}</div>
+    <div>Start:
+      {{experience.companyStart.getDate()}}/{{experience.companyStart.getMonth()}}/{{experience.companyStart.getFullYear()}}</div>
+    <div>End:
+      {{experience.companyEnd.getDate()}}/{{experience.companyEnd.getMonth()}}/{{experience.companyEnd.getFullYear()}}</div>
+    <div>Responsibility: {{experience.responsibilityShort}}</div>
+  </div>
+</div>

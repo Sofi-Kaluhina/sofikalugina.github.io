@@ -1,0 +1,11 @@
+<div *ngIf="experience">
+  <h2>{{experience.companyName}}</h2>
+  <div>Start:
+    {{experience.companyStart.getDate()}}/{{experience.companyStart.getMonth()}}/{{experience.companyStart.getFullYear()}}</div>
+  <div>End:
+    {{experience.companyEnd.getDate()}}/{{experience.companyEnd.getMonth()}}/{{experience.companyEnd.getFullYear()}}</div>
+  <div>Responsibility: {{experience.responsibilityFull}}</div>
+  <p>
+    <button (click)="gotoExperiences()">Back</button>
+  </p>
+</div>
