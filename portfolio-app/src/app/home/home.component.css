@@ -30,7 +30,9 @@ article {
 .mail-text p {
   color: ghostwhite;
 }
-.mail-text p a {
+h2, h3, span,
+.mail-text p a,
+.preview h4, .preview h5 {
   color: rgba(0, 55, 133, 0.82);
 }
 .about-me, .my-experience {
@@ -44,10 +46,9 @@ article {
 }
 .my-experience-content {
   background-color: transparent;
-  border: 40px solid rgba(248, 248, 255, 0.57);
 }
-h2, h3, span {
-  color: rgba(0, 55, 133, 0.82);
+.my-experience-content h2 {
+  color: ghostwhite;
 }
 h2, h3 {
   text-align: center;
@@ -64,7 +65,7 @@ h2, h3 {
   margin: 0 auto;
 }
 
-.exp-1 {
+.exp-item {
   display: flex;
   margin: 40px;
 }
@@ -75,8 +76,9 @@ h2, h3 {
   background-color: rgba(248, 248, 255, 0.57);
 }
 .prev-image {
+  position: relative;
   margin-left: 20px;
-  background: #000 url("../../app/img/ava2.jpg");
+  background: white url("/assets/images/banner_1.6_2,65.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -84,8 +86,35 @@ h2, h3 {
 }
 .show-title {
   height: 100%;
-  visibility: hidden;
+  transition-property: background-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  background-color: transparent;
+  color: transparent;
 }
-.show-title:hover {
-  visibility: visible;
+.show-title h4 {
+  display: block;
+  padding: 25px;
+}
+.prev-image:hover .show-title {
+  transition-property: background-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  background-color: rgba(10, 10, 13, 0.74);
+  color: ghostwhite;
+  cursor: pointer;
+}
+.preview {
+  overflow-x: hidden;
+}
+.exp-item:nth-child(2n+3) .prev-image {
+  margin-left: 0;
+  background: white url("/assets/images/logo-1200x630.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.exp-item:nth-child(2n+3) .preview {
+  margin-left: 25px;
 }
