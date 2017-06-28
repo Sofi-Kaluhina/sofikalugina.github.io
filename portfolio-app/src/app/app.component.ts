@@ -1,4 +1,5 @@
 import { Component,
+  OnInit,
   trigger,
   state,
   style,
@@ -9,10 +10,15 @@ import { Component,
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  // animations: []
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'SOFI KALUGINA';
+export class AppComponent implements OnInit{
+
+
+  constructor(){}
+
+  ngOnInit(){
+
+  }
 }
 

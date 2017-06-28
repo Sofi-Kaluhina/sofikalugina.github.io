@@ -30,9 +30,15 @@ import {
 })
 
 export class HomeComponent implements OnInit {
+  title = 'SOFI KALUGINA';
+  isExpanded = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+  public toExpand(): void{
+    this.isExpanded = !this.isExpanded;
   }
   state: string = 'small';
 

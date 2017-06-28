@@ -1,8 +1,91 @@
-p {
-  width:200px;
-  background:lightgray;
-  margin: 100px auto;
-  text-align:center;
-  padding:20px;
-  font-size:1.5em;
+.container {
+  width: 100%;
+  padding: 0;
+}
+article {
+  margin-top: 150px;
+}
+.logo {
+  margin: 0;
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  padding: 340px 0 200px 0;
+}
+.logo-text a {
+  font-size: -webkit-xxx-large;
+  font-family: sans-serif;
+  color: ghostwhite;
+}
+.logo-text a:focus,
+.logo-text a:hover {
+  text-decoration: none;
+}
+.mail {
+  padding-top: 55px;
+}
+.mail-text {
+  text-align: center;
+}
+.mail-text p {
+  color: ghostwhite;
+}
+.mail-text p a {
+  color: rgba(0, 55, 133, 0.82);
+}
+.about-me, .my-experience {
+  background-color: rgba(25, 33, 44, 0.71);
+}
+.about-me-content, .my-experience-content {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: ghostwhite;
+}
+.my-experience-content {
+  background-color: transparent;
+  border: 40px solid rgba(248, 248, 255, 0.57);
+}
+h2, h3, span {
+  color: rgba(0, 55, 133, 0.82);
+}
+h2, h3 {
+  text-align: center;
+}
+.photo {
+  width: 400px;
+  height: 400px;
+  background: #000 url("/assets/images/ava2.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 200px;
+  margin: 0 auto;
+}
+
+.exp-1 {
+  display: flex;
+  margin: 40px;
+}
+.preview, .prev-image {
+  width: 50%;
+  height: 345px;
+  padding: 25px;
+  background-color: rgba(248, 248, 255, 0.57);
+}
+.prev-image {
+  margin-left: 20px;
+  background: #000 url("../../app/img/ava2.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.show-title {
+  height: 100%;
+  visibility: hidden;
+}
+.show-title:hover {
+  visibility: visible;
 }
