@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
@@ -25,13 +27,16 @@ const appRoutes: Routes = [
     HomeComponent,
   ],
   imports: [
-    RouterModule.forRoot(appRoutes),
     BrowserModule,
+    BrowserAnimationsModule,
+    RouterModule.forRoot(appRoutes),
     FormsModule,
     HttpModule,
-    ExperienceModule
+    ExperienceModule,
+    NgbModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule{}
+
