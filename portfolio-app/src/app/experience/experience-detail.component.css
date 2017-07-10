@@ -1,0 +1,67 @@
+#logo-parashoes,
+.logo-text ul {
+  padding: 0;
+}
+#logo-parashoes {
+  background: white url("/assets/images/banner_1.6_2,65.png");
+  background-size: cover;
+  height: 520px;
+}
+.logo-text {
+  background-color: rgba(25, 33, 44, 0.71);
+}
+#logo-parashoes .logo-text,
+#logo-parashoes button
+{
+  margin-top: 5%;
+}
+#logo-parashoes button {
+  border: 2px solid ghostwhite;
+  color: ghostwhite;
+  background-color: rgba(25, 33, 44, 0.71);
+  padding: 5px 12px;
+  text-transform: uppercase;
+  font-size: 20px;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+#logo-parashoes button:hover {
+  background-color: rgba(140, 145, 166, 0.7);
+  border: 2px solid transparent;
+}
+#logo-parashoes button:focus {
+  outline: none;
+}
+.logo-text ul
+{
+  margin: 0 auto;
+  list-style-type: none;
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+.logo-text ul li
+{
+  display: inline-block;
+  background-color: rgba(140, 145, 166, 0.7);
+  padding: 0 10px;
+}
+
+.project-block {
+  width: 70%;
+  margin: 0 auto;
+  background-color: ghostwhite;
+}
+.about-project {
+  width: 100%;
+  padding: 20px;
+}
+.about-project span {
+
+}
+.project-views img {
+  width: 100%;
+}

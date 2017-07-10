@@ -1,25 +1,5 @@
-.container {
-  width: 100%;
-  padding: 0;
-}
 article {
   margin-top: 150px;
-}
-.logo {
-  margin: 0;
-  position: relative;
-  z-index: 5;
-  text-align: center;
-  padding: 340px 0 200px 0;
-}
-.logo-text a {
-  font-size: -webkit-xxx-large;
-  font-family: sans-serif;
-  color: ghostwhite;
-}
-.logo-text a:focus,
-.logo-text a:hover {
-  text-decoration: none;
 }
 .mail {
   padding-top: 55px;
@@ -30,27 +10,32 @@ article {
 .mail-text p {
   color: ghostwhite;
 }
-h2, h3, span,
 .mail-text p a,
 .preview h4, .preview h5 {
   color: rgba(0, 55, 133, 0.82);
 }
-.about-me, .my-experience {
+.about-me,
+.my-experience,
+.my-contacts {
   background-color: rgba(25, 33, 44, 0.71);
 }
-.about-me-content, .my-experience-content {
+.about-me-content,
+.my-experience-content,
+.my-contacts-content {
   width: 70%;
   margin: 0 auto;
   padding: 20px;
   background-color: ghostwhite;
 }
-.my-experience-content {
+.my-experience-content,
+.my-contacts-content {
   background-color: transparent;
 }
-.my-experience-content h2 {
+.my-experience-content h2,
+.my-contacts-content h2 {
   color: ghostwhite;
 }
-h2, h3 {
+h2, h3, h4 {
   text-align: center;
 }
 .photo {
@@ -65,7 +50,8 @@ h2, h3 {
   margin: 0 auto;
 }
 
-.exp-item {
+.exp-item,
+.contacts-items {
   display: flex;
   margin: 40px;
 }
@@ -97,15 +83,15 @@ h2, h3 {
   padding: 25px;
 }
 .prev-image:hover .show-title {
-  transition-property: background-color, color;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-out;
   background-color: rgba(10, 10, 13, 0.74);
   color: ghostwhite;
   cursor: pointer;
 }
 .preview {
   overflow-x: hidden;
+}
+.prev-image a:hover {
+  text-decoration: none;
 }
 .exp-item:nth-child(2n+3) .prev-image {
   margin-left: 0;
@@ -117,4 +103,40 @@ h2, h3 {
 }
 .exp-item:nth-child(2n+3) .preview {
   margin-left: 25px;
+}
+
+.my-contacts-content {
+  width: 100%;
+}
+.contact {
+  background-color: rgba(248, 248, 255, 0.57);
+  width: 25%;
+  height: 110px;
+}
+.contact a {
+  color: #292b2c;
+  transition: color 0.5s ease 0s;
+}
+.contact a:hover {
+  color: #2e5b9b;
+  text-decoration: none;
+}
+.contact a:hover .contact-text {
+  color: rgba(25, 33, 44, 0.71);
+}
+.fa {
+  display: block;
+  text-align: center;
+  font-size: 7em;
+  color: inherit;
+}
+.contact-text {
+  margin-top: -90px;
+  text-align: center;
+  font-size: 40px;
+  color: ghostwhite;
+  transition: color 0.5s ease 0s;
+}
+#e-mail .contact-text {
+  font-size: 38px;
 }

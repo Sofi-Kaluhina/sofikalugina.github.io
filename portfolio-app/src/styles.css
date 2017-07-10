@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+
 body {
   background: #000 url("app/img/background.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -11,6 +12,9 @@ html {
 }
 a {
   cursor: pointer;
+}
+span, h2, h3 {
+  color: rgba(0, 55, 133, 0.82);
 }
 .navbar {
   position: fixed;
@@ -38,4 +42,35 @@ a {
   color: rgba(25, 33, 44, 0.71);
   outline: none;
 }
+.container {
+  width: 100%;
+  padding: 0;
+}
+.logo {
+  margin: 0;
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  padding: 340px 0 200px 0;
+}
+.logo-text,
+.logo-text a {
+  font-size: -webkit-xxx-large;
+  font-family: sans-serif;
+  color: ghostwhite;
+}
+.logo-text a:focus,
+.logo-text a:hover {
+  text-decoration: none;
+}
+.mail {
+  padding-top: 55px;
+}
+.mail-text {
+  text-align: center;
+}
+.mail-text a {
+  color: rgba(0, 55, 133, 0.82);
+}
+
 

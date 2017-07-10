@@ -1,11 +1,62 @@
-<div *ngIf="experience">
-  <h2>{{experience.companyName}}</h2>
-  <div>Start:
-    {{experience.companyStart.getDate()}}/{{experience.companyStart.getMonth()}}/{{experience.companyStart.getFullYear()}}</div>
-  <div>End:
-    {{experience.companyEnd.getDate()}}/{{experience.companyEnd.getMonth()}}/{{experience.companyEnd.getFullYear()}}</div>
-  <div>Responsibility: {{experience.responsibilityFull}}</div>
-  <p>
+<div class="container">
+
+  <div class="logo" id="logo-parashoes">
     <button (click)="gotoExperiences()">Back</button>
-  </p>
+    <div class="logo-text">
+      ParaShoes
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>BOOTSTRAP</li>
+        <li>WEB UI</li>
+        <li>JAVASCRIPT</li>
+        <li>ANGULAR</li>
+        <li>RESPONSIVE</li>
+        <li>ADAPTIVE</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="project-block">
+    <div class="about-project">
+      <div *ngIf="experience">
+        <div><span>Start:</span>
+          {{experience.companyStart.getDate()}}/{{experience.companyStart.getMonth()}}/{{experience.companyStart.getFullYear()}}</div>
+        <div><span>End:</span>
+          {{experience.companyEnd.getDate()}}/{{experience.companyEnd.getMonth()}}/{{experience.companyEnd.getFullYear()}}</div>
+        <div><span>Customer:</span>
+          Ukrainian product company ParaShoes - shoes selling company.
+        </div>
+        <div>
+          <span>What was done:</span>
+        </div>
+        <div>
+          <span>Technical stack:</span>
+          <div>
+            <span>Programming languages:</span>
+          </div>
+          <div>
+            <span>Main Front End technologies:</span>
+          </div>
+          <div>
+            <span>Main Back End technologies:</span>
+          </div>
+          <div>
+            <span>Other technologies:</span>
+          </div>
+          <div>
+            <span>Builder and VCS:</span>
+          </div>
+        </div>
+        <div><span>Responsibility:</span>
+          {{experience.responsibilityFull}}</div>
+      </div>
+    </div>
+
+    <div class="project-views">
+      <img src="assets/images/parashoes-1.png">
+      <img src="assets/images/parashoes-2.png">
+      <img src="assets/images/parashoes-3.png">
+    </div>
+  </div>
 </div>
