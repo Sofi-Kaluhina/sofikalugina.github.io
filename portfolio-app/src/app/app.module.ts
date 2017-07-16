@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { CommonModule } from '@angular/common';
+import { ExperienceModule } from './experience/experience.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -11,7 +13,6 @@ import { AboutComponent } from './about/about.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
 import { ExperienceListComponent } from './experience/experience-list.component';
-import { ExperienceModule } from './experience/experience.module';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -33,6 +34,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     FormsModule,
     HttpModule,
+    CommonModule,
     ExperienceModule,
     NgbModule.forRoot()
   ],
