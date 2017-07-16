@@ -1,16 +1,35 @@
-<div>
+<div class="my-experience-content">
+  <h2 id="experience">
+    Experience list
+  </h2>
   <div
     *ngFor="let experience of experiences | async"
     [class.selected]="isSelected(experience)"
     (click)="onSelect(experience)"
     style="border: 1px solid black"
   >
-
-    <div>Company: {{experience.name}}</div>
-    <div>Start:
-      {{experience.companyStart.getDate()}}/{{experience.companyStart.getMonth()}}/{{experience.companyStart.getFullYear()}}</div>
-    <div>End:
-      {{experience.companyEnd.getDate()}}/{{experience.companyEnd.getMonth()}}/{{experience.companyEnd.getFullYear()}}</div>
-    <div>Responsibility: {{experience.responsibilityShort}}</div>
+      <div class="exp-item">
+        <div class="preview">
+          <h4>
+            {{experience.name}}
+          </h4>
+          <h5>
+            {{experience.companyStart.getDate()}}/{{experience.companyStart.getMonth()}}/{{experience.companyStart.getFullYear()}} — {{experience.companyEnd.getDate()}}/{{experience.companyEnd.getMonth()}}/{{experience.companyEnd.getFullYear()}}
+          </h5>
+          <p>
+            {{experience.responsibilityShort}}
+          </p>
+          <h5>
+            More about...
+          </h5>
+        </div>
+        <div class="prev-image">
+          <div class="show-title">
+            <h4>
+              {{experience.name}}
+            </h4>
+          </div>
+        </div>
+      </div>
   </div>
 </div>
