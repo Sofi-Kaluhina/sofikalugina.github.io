@@ -1,18 +1,14 @@
 <div class="container">
 
   <div class="logo" id="logo-parashoes">
+    <img src="{{experience.images.label}}">
     <button (click)="goBack()">Back</button>
     <div class="logo-text">
       ParaShoes
       <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>BOOTSTRAP</li>
-        <li>WEB UI</li>
-        <li>JAVASCRIPT</li>
-        <li>ANGULAR</li>
-        <li>RESPONSIVE</li>
-        <li>ADAPTIVE</li>
+        <ng-container *ngFor="let tech of experience.project.stack.tech">
+          <li>{{tech}}</li>
+        </ng-container>
       </ul>
     </div>
   </div>
@@ -21,42 +17,47 @@
     <div class="about-project">
       <div *ngIf="experience">
         <div><span>Start:</span>
-          {{experience.companyStart.getDate()}}/{{experience.companyStart.getMonth()}}/{{experience.companyStart.getFullYear()}}</div>
+          {{experience.project.start.year}} {{experience.project.start.month}}</div>
         <div><span>End:</span>
-          {{experience.companyEnd.getDate()}}/{{experience.companyEnd.getMonth()}}/{{experience.companyEnd.getFullYear()}}</div>
-        <div><span>Customer:</span>
-          Ukrainian product company ParaShoes - shoes selling company.
+          {{experience.project.end.year}} {{experience.project.end.month}}</div>
+        <div>
+          <span>Customer: {{experience.project.customer}}</span>
         </div>
         <div>
-          <span>What was done:</span>
+          <span>My role (goals): {{experience.project.role}}</span>
+        </div>
+        <div>
+          <span>What should have been done: {{experience.project.purpose}}</span>
         </div>
         <div>
           <span>Technical stack:</span>
           <div>
-            <span>Programming languages:</span>
+            <span>Programming languages: {{experience.project.stack.language}}</span>
           </div>
           <div>
             <span>Main Front End technologies:</span>
-          </div>
-          <div>
-            <span>Main Back End technologies:</span>
-          </div>
-          <div>
-            <span>Other technologies:</span>
+            <ul *ngFor="let tech of experience.project.stack.tech">
+              <li>{{tech}}</li>
+            </ul>
           </div>
           <div>
             <span>Builder and VCS:</span>
+            <ul *ngFor="let tools of experience.project.stack.vcs">
+              <li>{{tools}}</li>
+            </ul>
           </div>
         </div>
-        <div><span>Responsibility:</span>
-          {{experience.responsibilityFull}}</div>
+        <div>
+          <span>Responsibility:</span>
+          <ul *ngFor="let responsibility of experience.project.stack.responsibilities">
+            <li>{{responsibility}}</li>
+          </ul>
+        </div>
       </div>
     </div>
 
-    <div class="project-views">
-      <img src="assets/images/parashoes-1.png">
-      <img src="assets/images/parashoes-2.png">
-      <img src="assets/images/parashoes-3.png">
+    <div class="project-views" *ngFor="let image_path of experience.images.screenshots">
+      <img src="{{image_path}}">
     </div>
   </div>
 </div>

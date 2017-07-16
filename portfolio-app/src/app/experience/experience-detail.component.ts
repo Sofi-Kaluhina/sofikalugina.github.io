@@ -29,14 +29,6 @@ export class ExperienceDetailComponent implements OnInit {
       .subscribe((experience: Experience) => this.experience = experience);
   }
 
-  gotoExperiences() {
-    let experienceId = this.experience ? this.experience.id : null;
-    // Pass along the hero id if available
-    // so that the HeroList component can select that hero.
-    // Include a junk 'foo' property for fun.
-    this.router.navigate(['/experience', { id: experienceId, foo: 'foo' }]);
-  }
-
   goBack() {
     this.router.navigate(['/']);
   }

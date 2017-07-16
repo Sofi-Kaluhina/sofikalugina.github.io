@@ -30,7 +30,7 @@ export class ExperienceListComponent implements OnInit {
     this.experiences = this.route.params
       .switchMap((params: Params) => {
         this.selectedId = +params['id'];
-        return this.service.getExperiences();
+        return this.service.getExperienceList();
       });
   }
 

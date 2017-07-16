@@ -1,63 +1,62 @@
 import { Injectable } from '@angular/core';
 
+import { Http, Response } from '@angular/http';
 
-interface Company {
-  name: string,
-  start: Date,
-  end: Date
+import { Observable } from 'rxjs/Rx';
+
+class Stack {
+  language: string;
+  tech: string[];
+  vcs: string[];
+  responsibilities: string[];
 }
 
-export class Experience implements Company{
+class Images {
+  label: string;
+  screenshots: string[];
+}
+
+class Project {
   name: string;
   start: Date;
   end: Date;
-
-  constructor(
-    public id: number,
-    public companyName: string,
-    public companyStart: Date,
-    public companyEnd: Date,
-    public responsibilityShort: string,
-    public responsibilityFull: string
-  ) {
-    this.name = companyName;
-    this.start = companyStart;
-    this.end = companyEnd;
-  }
+  role: string;
+  customer: string;
+  purpose: string;
+  stack: Stack;
 }
 
-let EXPERIENCE: Experience[];
-EXPERIENCE = [
-  new Experience(
-    1,
-    'BUlavka',
-    new Date('2016-05-22T00:00:00'),
-    new Date('2016-12-27T00:00:00'),
-    'frontend',
-    'frontend bla bla bla'
-  ),
-  new Experience(
-    2,
-    'Roga & Kopyta LTD',
-    new Date('2017-01-12T00:00:00'),
-    new Date(),
-    'frontend',
-    'frontend bla bla bla'
-  )
-];
+export class Experience {
+  id: number;
+  project: Project;
+  images: Images;
+}
 
-let experiencePromise = Promise.resolve(EXPERIENCE);
 
 @Injectable()
 export class ExperienceService {
+  data: any;
+  obs: Observable<any>;
 
-  getExperiences() {
-    return experiencePromise;
+  constructor(private http: Http) {
+    this.obs = this.http.get('assets/experience.json')
+      .map((res: Response) => res.json())
+      .do(res => this.data = <Experience[]>res);
+  }
+
+  getExperienceList() {
+    if (this.data) {
+      console.log(this.data);
+      return Observable.of(this.data);
+    } else {
+      console.log(this.obs);
+      return this.obs;
+    }
   }
 
   getExperience(id: number | string) {
-    return experiencePromise.then(
+    return this.obs.map(
       experience => experience.find(experience => experience.id === +id)
-    )
+    );
   }
 }

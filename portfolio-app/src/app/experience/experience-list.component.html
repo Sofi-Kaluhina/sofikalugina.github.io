@@ -11,22 +11,24 @@
       <div class="exp-item">
         <div class="preview">
           <h4>
-            {{experience.name}}
+            {{experience.project.name}}
           </h4>
           <h5>
-            {{experience.companyStart.getDate()}}/{{experience.companyStart.getMonth()}}/{{experience.companyStart.getFullYear()}} — {{experience.companyEnd.getDate()}}/{{experience.companyEnd.getMonth()}}/{{experience.companyEnd.getFullYear()}}
+            {{experience.project.start.year}} {{experience.project.start.month}} — {{experience.project.end.year}} {{experience.project.end.month}}
           </h5>
           <p>
-            {{experience.responsibilityShort}}
+            {{experience.project.role}}
           </p>
           <h5>
             More about...
           </h5>
         </div>
         <div class="prev-image">
+          <!-- TODO: Move label images calling from css here. {{experience.images.label}}-->
+          <img src="{{experience.images.label}}" height="100px">
           <div class="show-title">
             <h4>
-              {{experience.name}}
+              {{experience.project.name}}
             </h4>
           </div>
         </div>

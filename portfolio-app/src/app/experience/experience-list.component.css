@@ -64,7 +64,7 @@ h2, h3, h4 {
 .prev-image {
   position: relative;
   margin-left: 20px;
-  background: white url("/assets/images/banner_1.6_2,65.png");
+  /*background: white url("/assets/images/experience/1/label/banner_1.6_2,65.png");*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -95,7 +95,7 @@ h2, h3, h4 {
 }
 .exp-item:nth-child(2n+3) .prev-image {
   margin-left: 0;
-  background: white url("/assets/images/logo-1200x630.png");
+  background: white url("/assets/images/experience/2/label/logo-1200x630.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
