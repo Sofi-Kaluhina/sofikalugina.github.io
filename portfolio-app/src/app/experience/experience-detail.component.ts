@@ -36,4 +36,8 @@ export class ExperienceDetailComponent implements OnInit {
     // Include a junk 'foo' property for fun.
     this.router.navigate(['/experience', { id: experienceId, foo: 'foo' }]);
   }
+
+  goBack() {
+    this.router.navigate(['/']);
+  }
 }
