@@ -46,10 +46,8 @@ export class ExperienceService {
 
   getExperienceList() {
     if (this.data) {
-      console.log(this.data);
       return Observable.of(this.data);
     } else {
-      console.log(this.obs);
       return this.obs;
     }
   }

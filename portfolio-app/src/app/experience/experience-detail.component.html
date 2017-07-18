@@ -4,7 +4,7 @@
     <img src="{{experience.images.label}}">
     <button (click)="goBack()">Back</button>
     <div class="logo-text">
-      ParaShoes
+      {{experience.project.name}}
       <ul>
         <ng-container *ngFor="let tech of experience.project.stack.tech">
           <li>{{tech}}</li>

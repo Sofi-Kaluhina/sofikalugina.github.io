@@ -8,21 +8,20 @@ body {
   background-size: cover;*/
   background: rgba(255, 89, 164, 1);
   background: -moz-linear-gradient(top, rgba(255, 89, 164, 1) 0%, rgba(230, 99, 39, 1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 89, 164, 1)), color-stop(100%, rgba(230, 99, 39, 1)));
   background: -webkit-linear-gradient(top, rgba(255, 89, 164, 1) 0%, rgba(230, 99, 39, 1) 100%);
   background: -o-linear-gradient(top, rgba(255, 89, 164, 1) 0%, rgba(230, 99, 39, 1) 100%);
   background: -ms-linear-gradient(top, rgba(255, 89, 164, 1) 0%, rgba(230, 99, 39, 1) 100%);
   background: linear-gradient(to bottom, rgba(255, 89, 164, 1) 0%, rgba(230, 99, 39, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff59a4', endColorstr='#e66327', GradientType=0);
 }
-html {
-  animation: 0.5s ease 0s normal;
-}
-a {
+a, .navbar-light .navbar-toggler   {
   cursor: pointer;
 }
 span, h2, h3 {
   color: rgba(0, 55, 133, 0.82);
+}
+h2, h3, h4 {
+  text-align: center;
 }
 .navbar {
   position: fixed;
@@ -32,7 +31,10 @@ span, h2, h3 {
   padding-top: 0;
   padding-bottom: 0;
 }
-.navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link,
+.logo-text,
+.logo-text a,
+.mail-text p {
   color: ghostwhite;
 }
 .navbar-light .navbar-nav .nav-link:focus,
@@ -50,6 +52,18 @@ span, h2, h3 {
   color: rgba(25, 33, 44, 0.71);
   outline: none;
 }
+#download-cv-item {
+  background-color: rgba(140, 145, 166, 0.7);
+  transition: background-color 0.2s ease-out;
+}
+#download-cv-item:focus,
+#download-cv-item:hover {
+  background-color: rgba(255, 89, 161, 0.61);
+}
+#download-cv-item .nav-link:focus,
+#download-cv-item .nav-link:hover {
+  color: #5b314e;
+}
 .container {
   width: 100%;
   padding: 0;
@@ -58,27 +72,90 @@ span, h2, h3 {
   margin: 0;
   position: relative;
   z-index: 5;
-  text-align: center;
   padding: 120px 0 0 0;
 }
 .logo-text,
 .logo-text a {
   font-size: -webkit-xxx-large;
   font-family: sans-serif;
-  color: ghostwhite;
 }
 .logo-text a:focus,
-.logo-text a:hover {
+.logo-text a:hover,
+.mail-text p a:focus,
+.mail-text p a:hover {
   text-decoration: none;
+  color: #5b314e;
 }
 .mail {
   padding-top: 5px;
 }
-.mail-text {
+.logo, .mail-text {
   text-align: center;
 }
-.mail-text a {
+.mail-text p a {
+  font-size: large;
   color: rgba(0, 55, 133, 0.82);
 }
+.navbar-light .navbar-nav .nav-link,
+.logo-text,
+.logo-text a,
+.mail-text p a {
+  transition: color 0.2s ease-out;
+}
+
+/* Styles for contacts component */
+
+.my-contacts {
+  background-color: rgba(25, 33, 44, 0.71);
+}
+.my-contacts-content {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: transparent;
+}
+.my-contacts-content h2,
+.contact-text {
+  color: ghostwhite;
+}
+.contacts-items {
+   display: flex;
+   margin: 40px;
+}
+.contact {
+  background-color: rgba(248, 248, 255, 0.57);
+  width: 25%;
+  height: 110px;
+}
+.contact a {
+  color: #292b2c;
+}
+.contact a:hover {
+  color: #2e5b9b;
+  text-decoration: none;
+}
+.contact a:hover .contact-text {
+  color: rgba(25, 33, 44, 0.71);
+}
+.contacts-items .contact a .fa {
+  display: block;
+  text-align: center;
+  font-size: 7em;
+  color: inherit;
+}
+.contact-text {
+  margin-top: -90px;
+  text-align: center;
+  font-size: 40px;
+}
+#e-mail .contact-text  {
+  font-size: 38px;
+}
+.contact a, .contact-text {
+  transition: color 0.5s ease 0s;
+}
+
+
+
 
 
