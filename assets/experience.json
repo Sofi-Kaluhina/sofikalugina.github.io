@@ -1,0 +1,138 @@
+[
+  {
+    "id": 3,
+    "project": {
+      "name": "Personal landing page",
+      "start": {
+        "year": "2017",
+        "month": "May"
+      },
+      "end": {
+        "year": "2017",
+        "month": "June"
+      },
+      "role": "At the middle of May 2017 I’ve started developing on my own personal landing page with my portfolio and details description of my experience.",
+      "customer": "I'am.",
+      "purpose": "The purpose of the project: investigation new pretty technologies and developing my own landing page with examples of my works.",
+      "stack": {
+        "language": "TypeScript 2.2 to ES6",
+        "tech": [
+          "Angular2",
+          "Webpack2",
+          "HTML5",
+          "CSS3",
+          "Stylus",
+          "NodeJS",
+          "ExpressJS",
+          "NPM"
+        ],
+        "vcs": [
+          "GitHub"
+        ],
+        "responsibilities": [
+          "Organization of dev environment: setting up framework, builder.",
+          "Creating a routing system for new components.",
+          "Creating templates based on mockups own designed.",
+          "Templates layout and styling.",
+          "Creating of application components.",
+          "Creating of application services."
+        ]
+      }
+    },
+    "images": {
+      "label": "",
+      "screenshots": []
+    }
+  },
+  {
+    "id": 2,
+    "project": {
+      "name": "Freelance",
+      "start": {
+        "year": "2017",
+        "month": "May"
+      },
+      "end": {
+        "year": "2017",
+        "month": "June"
+      },
+      "role": "In this project, I was developing a client side of the application. I worked in big, international and distributed team, which has more than 20 developers, the total number of developers in the project is about 150. I was creating new controllers to supporting new features of the application, as well I’ve creating services for interaction with the distributed requests system.",
+      "customer": "International company with stakeholder and developers from America, China and India. ",
+      "purpose": "The purpose of the project: development of product for the accounting of human resources.",
+      "stack": {
+        "language": "JavaScript (ES6)",
+        "tech": [
+          "Angular 1.6.2",
+          "Webpack",
+          "HTML5",
+          "CSS3",
+          "SASS",
+          "Bower"
+        ],
+        "vcs": [
+          "GitLab"
+        ],
+        "responsibilities": [
+          "Organization of dev environment: setting up framework, builder.",
+          "Creating a routing system for new and current controllers.",
+          "Creating templates based on mockups which designers gave me.",
+          "Templates layout and styling.",
+          "Creating and describing of application controllers logic.",
+          "Interaction with the distributed request system on backend side."
+        ]
+      }
+    },
+    "images": {
+      "label": "/assets/images/experience/2/label/logo-1200x630.png",
+      "screenshots": []
+    }
+  },
+  {
+    "id": 1,
+    "project": {
+      "name": "ParaShoes",
+      "start": {
+        "year": "2016",
+        "month": "May"
+      },
+      "end": {
+        "year": "2017",
+        "month": "February"
+      },
+      "role": "On my first project I worked on developing the client part of the Internet showcase. At the beginning of the project there was no designer and I developed mockups, so it's not alien to me. As a result, there were two developers - I was responsible for Front End and one Back End developer with whom I collaborated in terms of integration.",
+      "customer": "Ukrainian product company ParaShoes - shoes selling company.",
+      "purpose": "The purpose of the project: development of an Internet showcase of the company.",
+      "stack": {
+        "language": "JavaScript (ES5)",
+        "tech": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "Bootstrap",
+          "Angular 1.5.8",
+          "Grunt",
+          "Bower"
+        ],
+        "vcs": [
+          "GitLab"
+        ],
+        "responsibilities": [
+          "Organization of dev environment: setting up framework, builder.",
+          "Creating a routing system for future application.",
+          "Creating mockups for application interface.",
+          "Templates layout and styling.",
+          "Creating and describing of application controllers logic.",
+          "Integration with backend of the application."
+        ]
+      }
+    },
+    "images": {
+      "label": "/assets/images/experience/1/label/banner_1.6_2,65.png",
+      "screenshots": [
+        "/assets/images/experience/1/screenshots/parashoes-1.png",
+        "/assets/images/experience/1/screenshots/parashoes-2.png",
+        "/assets/images/experience/1/screenshots/parashoes-3.png"
+      ]
+    }
+  }
+]
