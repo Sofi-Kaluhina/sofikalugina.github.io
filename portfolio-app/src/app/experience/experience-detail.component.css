@@ -1,40 +1,46 @@
-#logo-parashoes,
+#project-logo,
 .logo-text ul {
   padding: 0;
 }
-#logo-parashoes {
-  /*background: white url("/assets/images/experience/1/label/banner_1.6_2,65.png");*/
-  background-size: cover;
+#project-logo {
+  background-color: white;
   height: 520px;
+  position: relative;
+}
+#project-logo-details {
+  top: 0;
+  position: absolute;
+  width: 100%;
+}
+#project-logo img {
+  width: 100%;
+  height: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 .logo-text {
   background-color: rgba(25, 33, 44, 0.71);
 }
-#logo-parashoes .logo-text,
-#logo-parashoes button
-{
-  margin-top: 5%;
-}
-#logo-parashoes button {
+#project-logo-details button {
   border: 2px solid ghostwhite;
   color: ghostwhite;
   background-color: rgba(25, 33, 44, 0.71);
   padding: 5px 12px;
   text-transform: uppercase;
   font-size: 20px;
-  transition-property: background-color;
-  transition-duration: 0.2s;
+  transition: background-color 0.2s ease-out;
   cursor: pointer;
+  margin: 45px 0 45px 0;
 }
-#logo-parashoes button:hover {
+#project-logo-details button:hover {
   background-color: rgba(140, 145, 166, 0.7);
   border: 2px solid transparent;
 }
-#logo-parashoes button:focus {
+#project-logo-details button:focus {
   outline: none;
 }
-.logo-text ul
-{
+.logo-text ul {
   margin: 0 auto;
   list-style-type: none;
   display: flex;

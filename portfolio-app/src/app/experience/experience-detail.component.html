@@ -1,7 +1,10 @@
 <div class="container">
 
-  <div class="logo" id="logo-parashoes">
+  <div class="logo" id="project-logo">
     <img src="{{experience.images.label}}">
+  </div>
+
+  <div class="logo" id="project-logo-details">
     <button (click)="goBack()">Back</button>
     <div class="logo-text">
       {{experience.project.name}}
@@ -21,18 +24,22 @@
         <div><span>End:</span>
           {{experience.project.end.year}} {{experience.project.end.month}}</div>
         <div>
-          <span>Customer: {{experience.project.customer}}</span>
+          <span>Customer:</span>
+          {{experience.project.customer}}
         </div>
         <div>
-          <span>My role (goals): {{experience.project.role}}</span>
+          <span>My role (goals): </span>
+          {{experience.project.role}}
         </div>
         <div>
-          <span>What should have been done: {{experience.project.purpose}}</span>
+          <span>What has been done: </span>
+          {{experience.project.purpose}}
         </div>
         <div>
           <span>Technical stack:</span>
           <div>
-            <span>Programming languages: {{experience.project.stack.language}}</span>
+            <span>Programming languages: </span>
+            {{experience.project.stack.language}}
           </div>
           <div>
             <span>Main Front End technologies:</span>
