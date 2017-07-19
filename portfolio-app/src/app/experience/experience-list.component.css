@@ -1,78 +1,61 @@
-
-.mail {
-  padding-top: 55px;
-}
-.mail-text {
-  text-align: center;
-}
-.mail-text p {
-  color: ghostwhite;
-}
-
-
 .my-experience-content {
   width: 70%;
   margin: 0 auto;
   padding: 20px;
-  background-color: transparent;
-}
-.show-title {
-  background-color: transparent;
-}
-.my-experience-content h2,
-.prev-image:hover .show-title {
-  color: ghostwhite;
 }
 .exp-item {
   display: flex;
   margin: 40px;
 }
-.preview, .prev-image {
-  width: 50%;
-  height: 345px;
-  padding: 25px;
+.preview {
+  overflow-x: hidden;
   background-color: rgba(248, 248, 255, 0.57);
-}
-.preview h4, .preview h5 {
-  color: rgba(0, 55, 133, 0.82);
 }
 .prev-image {
   position: relative;
   margin-left: 20px;
-  background: white url("/assets/images/experience/1/label/banner_1.6_2,65.png");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: ghostwhite;
 }
 .show-title {
-  height: 100%;
-  transition: background-color, color 0.2s ease-out;
-  color: transparent;
+  top: 0;
+  position: absolute;
+  background-color: rgba(10, 10, 13, 0.74);
+  cursor: pointer;
+  transition: opacity 0.3s ease-out;
 }
 .show-title h4 {
   display: block;
+  transition: all 0.3s ease-out;
+}
+
+/* Common styles */
+
+.my-experience-content h2, .show-title h4 {
+  color: ghostwhite;
+}
+.preview h4, .preview h5 {
+  color: rgba(0, 55, 133, 0.82);
+}
+.preview, .prev-image {
+  width: 50%;
+  height: 345px;
+}
+.prev-image, .show-title h4 {
+  padding: 0;
+}
+.show-title, .show-title h4 {
+  opacity: 0;
+}
+.prev-image:hover .show-title,
+.prev-image:hover .show-title h4 {
+  opacity: 1;
+}
+.prev-image img, .show-title {
+  width: 100%;
+  height: 100%;
+}
+.preview,
+.prev-image:hover .show-title h4 {
   padding: 25px;
 }
-.prev-image:hover .show-title {
-  background-color: rgba(10, 10, 13, 0.74);
-  color: ghostwhite;
-  cursor: pointer;
-}
-.preview {
-  overflow-x: hidden;
-}
-.prev-image a:hover {
-  text-decoration: none;
-}
-.exp-item:nth-child(2n+3) .prev-image {
-  margin-left: 0;
-  background: white url("/assets/images/experience/2/label/logo-1200x630.png");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.exp-item:nth-child(2n+3) .preview {
-  margin-left: 25px;
-}
+
