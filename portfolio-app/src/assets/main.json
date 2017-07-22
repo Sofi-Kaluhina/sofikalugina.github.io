@@ -1,10 +1,13 @@
 {
-  "firstname": "Sophia",
-  "secondname": "Kalugina",
-  "dateBirth": "1988-10-22T00:00:00",
-  "phone": "+38 (098) 224 40 72",
+  "firstName": "Sophia",
+  "secondName": "Kalugina",
+  "dateBirth": "10/22/1988",
   "location": "Kiev, Ukraine",
-  "email": "sofi.kalugina@gmail.com",
-  "skype": "sofi.kalugina",
-  "description": "I'm a Front End software developer. I started learning front end in December 2015, at Brain Academy courses, I studied layout, styling, Less, Grunt builder, and of course JavaScript. At the moment I am studying such technologies as TypeScript, webpack 2, Angular 2. I am open to new knowledge and technologies, and most importantly - I dream to work in a big team of professionals, from which I could learn a lot, be able to improve my knowledge and skills and could bring benefit to the project with my work. And also I can speak English very well."
+  "languages": "Ukrainian, Russian - native, English - advanced: high communicative skills, both verbal and writing.",
+  "education": {
+    "higher": "Mariupol State University, foreign languages (English translation)",
+    "courses": "Brain Academy, LLC Frontend course",
+    "certificate": "Certificate of Achievement Brain Academy Career Certification, Licence 0443"
+    },
+  "description": "I'm a Front End software developer. I started learning front end in December 2015, at Brain Academy courses, I studied layout, styling, Less, Grunt builder, and of course JavaScript. At the moment I am studying such technologies as TypeScript, webpack 2, Angular 2. I am open to new knowledge and technologies, and most importantly - I dream to work in a big team of professionals, from which I could learn a lot, be able to improve my knowledge and skills and could bring benefit to the project with my work."
 }
